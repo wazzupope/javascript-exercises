@@ -6,6 +6,7 @@ const reverseString = function(string) {
         stringArray[i] = str.charAt(i);
     }
     revArray = stringArray.reverse();
+    revArray = revArray.join("");
     return revArray.toString();
 };
 
