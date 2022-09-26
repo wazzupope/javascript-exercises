@@ -4,7 +4,8 @@ const palindromes = function (string) {
     function removePunctuation() {
         let charArray = str.split('');
         let noPunct = charArray.filter(char => char.replace(punctuation, ''));
-        return noPunct;
+        str = noPunct.join('');
+        return str;
     }
 
     removePunctuation();
