@@ -22,6 +22,10 @@ const palindromes = function (string) {
     }
 
     removePunctuation();
+
+    function isPalindrome() {
+        
+    }
 };
 
 /*
