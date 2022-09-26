@@ -11,8 +11,18 @@ const palindromes = function (string) {
     removePunctuation();
 
     function removeSpaces() {
-
+        str = str.replace(/\s/g, '');
     }
+
+    removeSpaces();
+
+    function lowerCase() {
+        str = str.toLowerCase();
+    }
+
+    lowerCase();
+
+    
 };
 
 /*
