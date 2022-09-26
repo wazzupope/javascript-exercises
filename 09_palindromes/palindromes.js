@@ -1,14 +1,5 @@
 const palindromes = function (string) {
     let str = string;
-    const punctuation = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~';
-    function removePunctuation() {
-        let charArray = str.split('');
-        let noPunct = charArray.filter(char => char.replace(punctuation, ''));
-        str = noPunct.join('');
-        return str;
-    }
-
-    removePunctuation();
 
     function removeSpaces() {
         str = str.replace(/\s/g, '');
@@ -23,6 +14,14 @@ const palindromes = function (string) {
     lowerCase();
 
     
+    function removePunctuation() {
+        const punctuation = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~';
+        let charArray = str.split('');
+        let noPunct = charArray.filter(char => char.replace(punctuation, ''));
+        str = noPunct;
+    }
+
+    removePunctuation();
 };
 
 /*
