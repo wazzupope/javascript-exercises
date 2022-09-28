@@ -23,9 +23,23 @@ const palindromes = function (string) {
 
     removePunctuation();
 
-    function isPalindrome() {
-        
+    function isPalindrome(str) {
+        let strLen = str.length;
+        for (i = 0; i < strLen; i++) {
+            if (indexOf(str[i]) === indexOf(str[strLen -1])) {
+                return true;
+            }
+            else if (str[i] === str[strLen - 1]) {
+                strLen--;
+            }
+            else {
+                return false;
+            }
+        }
+
     }
+
+    isPalindrome(str);
 };
 
 /*
