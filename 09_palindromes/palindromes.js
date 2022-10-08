@@ -26,7 +26,7 @@ const palindromes = function (string) {
     function isPalindrome(str) {
         let strLen = str.length;
         for (i = 0; i < strLen; i++) {
-            if (str.indexOf(str[i]) === str.indexOf(str[strLen -1])) {
+            if (str.indexOf(str[i]) === str.indexOf(str[strLen - 1])) {
                 return true;
             }
             else if (str[i] === str[strLen - 1]) {
