@@ -27,11 +27,11 @@ const palindromes = function (string) {
             if (i === (strLen - 1)) {
                 return true;
             }
-            else if (str[i] === str[strLen - 1]) {
-                strLen--;
-            }
             else if (i === strLen) {
                 return true;
+            }            
+            else if (str[i] === str[strLen - 1]) {
+                strLen--;
             }
             else {
                 return false;
