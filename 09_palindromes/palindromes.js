@@ -39,7 +39,12 @@ const palindromes = function (string) {
 
     }
 
-    isPalindrome(str);
+    if (isPalindrome(str) == true) {
+        return true;
+    }
+    else {
+        return false;
+    };
 };
 
 /*
