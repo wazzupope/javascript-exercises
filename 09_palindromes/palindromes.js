@@ -15,10 +15,8 @@ const palindromes = function (string) {
 
     
     function removePunctuation() {
-        const punctuation = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~';
-        let charArray = str.split('');
-        let noPunct = charArray.filter(char => char.replace(punctuation, ''));
-        str = noPunct;
+        str = str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
+        str = str.replace(/\s{2,}/g, " ");
     }
 
     removePunctuation();
