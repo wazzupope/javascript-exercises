@@ -23,12 +23,15 @@ const palindromes = function (string) {
 
     function isPalindrome(str) {
         let strLen = str.length;
-        for (i = 0; i < strLen; i++) {
+        for (i = 0; i <= strLen; i++) {
             if (i === (strLen - 1)) {
                 return true;
             }
             else if (str[i] === str[strLen - 1]) {
                 strLen--;
+            }
+            else if (i === strLen) {
+                return true;
             }
             else {
                 return false;
