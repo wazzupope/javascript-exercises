@@ -3,7 +3,7 @@ const fibonacci = function(num) {
     let newFibo = 1;
     let currentFibo = 1;
     for (i = 0; i < num; i++) {
-        if (num === 1) {
+        if (num == 1) {
             return (prevFibo + currentFibo);
         }
         else if (num < 1) {
@@ -11,7 +11,7 @@ const fibonacci = function(num) {
         }
         else {
             newFibo += prevFibo;
-            if (i === (num - 3)) {
+            if (i == (num - 3)) {
                 return newFibo;
             }
             else {
