@@ -2,14 +2,14 @@ const fibonacci = function(num) {
     let prevFibo = 1;
     let newFibo = 1;
     let currentFibo = 1;
-    for (i = 0; i < num; i++) {
-        if (num == 1 || num == 2) {
-            return 1;
-        }
-        else if (num <= 0) {
-            return "OOPS";
-        }
-        else {
+    if (num == 1 || num == 2) {
+        return 1;
+    }
+    else if (num <= 0) {
+        return "OOPS";
+    }
+    else {
+        for (i = 0; i < num; i++) {
             newFibo += prevFibo;
             if (i == (num - 3)) {
                 return newFibo;
@@ -18,7 +18,7 @@ const fibonacci = function(num) {
                 prevFibo = currentFibo;
                 currentFibo = newFibo;
             };
-        };
+        }:
     };
 };
 
