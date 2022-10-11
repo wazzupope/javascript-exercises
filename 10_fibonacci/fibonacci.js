@@ -3,11 +3,11 @@ const fibonacci = function(num) {
     let newFibo = 1;
     let currentFibo = 1;
     for (i = 0; i < num; i++) {
-        if (num == 1) {
-            return (prevFibo + currentFibo);
-        }
-        else if (num < 1) {
+        if (num == 1 || num == 2) {
             return 1;
+        }
+        else if (num <= 0) {
+            return "OOPS";
         }
         else {
             newFibo += prevFibo;
