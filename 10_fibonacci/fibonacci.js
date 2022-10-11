@@ -18,7 +18,7 @@ const fibonacci = function(num) {
                 prevFibo = currentFibo;
                 currentFibo = newFibo;
             };
-        }:
+        };
     };
 };
 
