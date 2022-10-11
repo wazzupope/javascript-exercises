@@ -1,9 +1,10 @@
 const fibonacci = function(num) {
     let prevFibo = 1;
     let newFibo = 1;
+    let currentFibo = 1;
     for (i = 0; i < num; i++) {
         if (num === 1) {
-            return (prevFibo + newFibo);
+            return (prevFibo + currentFibo);
         }
         else if (num < 1) {
             return 1;
@@ -14,7 +15,8 @@ const fibonacci = function(num) {
                 return newFibo;
             }
             else {
-                prevFibo = newFibo;
+                prevFibo = currentFibo;
+                currentFibo = newFibo;
             };
         };
     };
