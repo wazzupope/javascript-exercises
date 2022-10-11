@@ -11,7 +11,7 @@ const fibonacci = function(num) {
         }
         else {
             newFibo += prevFibo;
-            if (i === (num - 1)) {
+            if (i === (num - 3)) {
                 return newFibo;
             }
             else {
