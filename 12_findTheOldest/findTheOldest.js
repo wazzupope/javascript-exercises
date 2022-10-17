@@ -1,6 +1,6 @@
 const findTheOldest = function(people) {
     let array = people;
-    const today = newDate();
+    const today = new Date();
     const year = today.getFullYear();
     let ages = [];
     array.forEach(function (element) {
