@@ -14,7 +14,12 @@ const findTheOldest = function(people) {
     for (i = 0; i < array.length; i++) {
         ages.push(array[i].age);
     };
-    return Math.max(ages);
+    const oldest = array.reduce(
+        (array[prev], array[curr]) => {
+            array[x].age > array[y].age ? (array[prev] = array[x]) : (array[prev] = array[y])
+        }
+        array[0],
+    );
 };
 
 // Do not edit below this line
