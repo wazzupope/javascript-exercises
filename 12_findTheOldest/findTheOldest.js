@@ -1,6 +1,8 @@
 const findTheOldest = function(people) {
     let array = people;
-    const today = new Date();
+
+};
+    /*const today = new Date();
     const year = today.getFullYear();
     let ages = [];
     array.forEach(function (element) {
@@ -20,7 +22,6 @@ const findTheOldest = function(people) {
         }
         array[0],
     );
-};
-
+*/
 // Do not edit below this line
 module.exports = findTheOldest;
